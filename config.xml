@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTf-8" ?>
+<config>
+	<virtualdirectory name="admin" uri="admin/" auth="integratedwindowsauthentication" path="D:\Support\HttpListener\admin\" comment="required element">			
+		<authorize group="rcis_dom\Domain Users"/>		
+	</virtualdirectory>
+	<virtualdirectory name="SSRCleanup" uri="ssrcleanup/" auth="integratedwindowsauthentication" path="D:\Support\HttpListener\scripts\ssrcleanup\" comment="Snapshot cleanup">			
+		<authorize group="rcis_dom\PD_SSR_Users"/>
+	</virtualdirectory>
+	<virtualdirectory name="Example" uri="example/" auth="integratedwindowsauthentication" path="D:\Support\HttpListener\scripts\example\" comment="Example scripts">			
+		<authorize address="0.0.0.0" mask="0.0.0.0"/>
+	</virtualdirectory>
+	<virtualdirectory name="scripts" uri="scripts/" auth="anonymous" path="D:\Support\HttpListener\Scripts\">			
+	</virtualdirectory>
+	<virtualdirectory name="includes" uri="includes/" auth="anonymous" path="D:\Support\HttpListener\includes\" comment="required element">		
+		<authorize address="0.0.0.0" mask="0.0.0.0"/>
+	</virtualdirectory>
+	<virtualdirectory name="images" uri="images/" auth="anonymous" path="D:\Support\HttpListener\images\">
+	</virtualdirectory>
+	<virtualdirectory name="root" uri="/" auth="anonymous" path="D:\Support\HttpListener\root\" comment="required element">
+	</virtualdirectory>
+	<mime>
+		<override name="ps1" content="text/html" type="script"/>
+		<override name="psm1" content="text/html" type="text"/>
+	</mime>
+	<defaultdocument>
+		<value>default.ps1</value>
+		<value>default.htm</value>
+		<value>default.html</value>
+		<value>index.htm</value>
+		<value>index.html</value>
+	</defaultdocument>
+	<server comment="required element"
+		port="7000" 
+		title="PS3"
+		logpath="d:\support\HttpListener\Logs\"
+		integritycheck="false"
+		requestlog="false"
+		requestlogpath="d:\support\HttpListener\Logs\"
+		ip=""
+		cert="EEBBAB4F9787F094442823843390A82441DA852C"
+	/>	
+</config>

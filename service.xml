@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTf-8" ?>
+<config>
+	<service
+		name="PS3Service"
+		displayname="PowershellScriptServer"
+		description="Powershell Script Server host exposes powershell scripts via a web interface."
+		eventlog="Application"
+		logpath="D:\Support\HttpListener\Logs"
+		command='d:\support\HttpListener\ps3.ps1 -title "JasonsWebServer" -port 7171'
+	/>	
+</config>

@@ -1,0 +1,5 @@
+d:\users\brisj01\documents\visual studio 2015\Projects\HttpDelegate\HttpDelegate\obj\Debug\HttpDelegate.csprojResolveAssemblyReference.cache
+d:\users\brisj01\documents\visual studio 2015\Projects\HttpDelegate\HttpDelegate\bin\Debug\HttpDelegate.dll
+d:\users\brisj01\documents\visual studio 2015\Projects\HttpDelegate\HttpDelegate\bin\Debug\HttpDelegate.pdb
+d:\users\brisj01\documents\visual studio 2015\Projects\HttpDelegate\HttpDelegate\obj\Debug\HttpDelegate.dll
+d:\users\brisj01\documents\visual studio 2015\Projects\HttpDelegate\HttpDelegate\obj\Debug\HttpDelegate.pdb
